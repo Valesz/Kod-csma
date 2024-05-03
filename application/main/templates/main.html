@@ -1,0 +1,21 @@
+{% extends 'index.html' %}
+
+{% block css %}
+    <link rel="stylesheet" href="{{ url_for('main.static', filename='style.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="main">
+    <div class="first-container"></div>
+    <div class="first-center">
+        <div>
+            <h1>Üdvözöljük a legmodernebb <br><span>Kód-csmában!</span></h1>
+            <p>Egy biztonságos, élvezetes és bug mentes helyen.</p>
+            <a href="/shop"><button>Áruház</button></a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+
