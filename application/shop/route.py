@@ -15,4 +15,6 @@ def addProduct():
             shopController().addProduct(shopController().getRow(request.form.get('id')))
         except ValueError:
             return redirect(url_for('error.loadError', msg="Given id not found!"))
+        except FileNotFoundError:
+            return redirect(url_for('error.loadError', msg='Database not found!'))
     return redirect(url_for('shop.loadShop'))

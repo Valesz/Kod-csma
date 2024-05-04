@@ -4,9 +4,9 @@
             <h1>Kódcsma</h1>
         </div>
         <ul>
-            <li><a href="/">Kezdőlap</a></li>
-            <li><a href="/shop">Áruház</a></li>
-            <li><a href="#">Kosár</a></li>
+            <li><a href="{{ url_for('main.loadMain') }}">Kezdőlap</a></li>
+            <li><a href="{{ url_for('shop.loadShop') }}">Áruház</a></li>
+            <li><a href="{{ url_for('cart.loadCart') }}">Kosár</a></li>
         </ul>
     </div>
 </nav>

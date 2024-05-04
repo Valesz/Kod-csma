@@ -1,5 +1,5 @@
 from flask import Flask
-from flask import redirect
+from flask import redirect, url_for
 from application.main.route import main
 from application.shop.route import shop
 from application.error.route import error
@@ -19,7 +19,7 @@ Session(app)
 
 @app.route('/')
 def hello_world():  # put application's code here
-    return redirect(main.url_prefix)
+    return redirect(url_for('main.loadMain'))
 
 
 if __name__ == '__main__':
