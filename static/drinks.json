@@ -1,0 +1,130 @@
+{
+	"italok": [
+		{
+			"id": 0,
+			"name": "Init (bejovos)",
+			"image": "shop.static/images/shop_init.jpg",
+			"cost": 400
+		},
+		{
+			"id": 1,
+			"name": "Bash Brew",
+			"image": "shop.static/images/shop_init.jpg",
+			"cost": 400
+		},
+		{
+			"id": 2,
+			"name": "C Sharp Cider",
+			"image": "shop.static/images/shop_init.jpg",
+			"cost": 400
+		},
+		{
+			"id": 3,
+			"name": "Go Grog",
+			"image": "shop.static/images/shop_init.jpg",
+			"cost": 400
+		},
+		{
+			"id": 4,
+			"name": "Haskell Highball",
+			"image": "shop.static/images/shop_init.jpg",
+			"cost": 400
+		},
+		{
+			"id": 5,
+			"name": "Java Julep",
+			"image": "shop.static/images/shop_init.jpg",
+			"cost": 400
+		},
+		{
+			"id": 6,
+			"name": "Kotlin Kolsch",
+			"image": "shop.static/images/shop_init.jpg",
+			"cost": 400
+		},
+		{
+			"id": 7,
+			"name": "Matlab Mojito",
+			"image": "shop.static/images/shop_init.jpg",
+			"cost": 400
+		},
+		{
+			"id": 8,
+			"name": "Python Pilsner",
+			"image": "shop.static/images/shop_init.jpg",
+			"cost": 400
+		},
+		{
+			"id": 9,
+			"name": "Ruby Rosé",
+			"image": "shop.static/images/shop_init.jpg",
+			"cost": 400
+		},
+		{
+			"id": 10,
+			"name": "Swift Sangria",
+			"image": "shop.static/images/shop_init.jpg",
+			"cost": 400
+		},
+		{
+			"id": 11,
+			"name": "TypeScript Tequila",
+			"image": "shop.static/images/shop_init.jpg",
+			"cost": 400
+		},
+		{
+			"id": 12,
+			"name": "Vim Vodka",
+			"image": "shop.static/images/shop_init.jpg",
+			"cost": 400
+		},
+		{
+			"id": 13,
+			"name": "Wolfram Whiskey",
+			"image": "shop.static/images/shop_init.jpg",
+			"cost": 400
+		},
+		{
+			"id": 14,
+			"name": "YAML Yager",
+			"image": "shop.static/images/shop_init.jpg",
+			"cost": 400
+		},
+		{
+			"id": 15,
+			"name": "Code Cooler",
+			"image": "shop.static/images/shop_init.jpg",
+			"cost": 400
+		},
+		{
+			"id": 16,
+			"name": "Giga Gin",
+			"image": "shop.static/images/shop_init.jpg",
+			"cost": 400
+		},
+		{
+			"id": 17,
+			"name": "Bug Bitter",
+			"image": "shop.static/images/shop_init.jpg",
+			"cost": 400
+		},
+		{
+			"id": 18,
+			"name": "Variable Vesper",
+			"image": "shop.static/images/shop_init.jpg",
+			"cost": 400
+		},
+		{
+			"id": 19,
+			"name": "Query Quaff",
+			"image": "shop.static/images/shop_init.jpg",
+			"cost": 400
+		},
+		{
+			"id": 20,
+			"name": "Method Martini",
+			"image": "shop.static/images/shop_init.jpg",
+			"cost": 400
+		}
+	]
+}

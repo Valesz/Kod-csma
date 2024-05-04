@@ -1,0 +1,47 @@
+.shop {
+    min-height: 100vh;
+    height: fit-content;
+    padding: 20px;
+}
+
+.shop h1 {
+    text-align: center;
+    margin: 15px auto 60px;
+}
+
+.card {
+    height: 200px;
+    width: 200px;
+    border: 2px solid #FF9800;
+    border-radius: 10px;
+    background-image: url("./images/shop_init.jpg");
+    background-size: cover;
+}
+
+.card .cardHeader {
+    padding: 5px 5px 5px 10px;
+    background-color: rgba(255, 152, 0, 0.8);
+    border-radius: 10px;
+    color: white;
+    filter: opacity(0%);
+    transition: 0.3s all;
+}
+
+.card:hover .cardHeader {
+    filter: opacity(100%);
+}
+
+.card .cardBody {
+    padding: 5px 5px 5px 10px;
+    background-color: rgba(255, 152, 0, 0.8);
+    border-radius: 10px;
+    color: white;
+    font-size: 1.3rem;
+    margin-top: 125px;
+    filter: opacity(0%);
+    transition: 0.3s all;
+}
+
+.card:hover .cardBody {
+    filter: opacity(100%);
+}
