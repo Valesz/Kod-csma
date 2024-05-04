@@ -8,7 +8,7 @@ class shopController():
         self.collection = json.load(self.openDB())
 
     def openDB(self):
-        return open(pathlib.Path().cwd() / 'drinks.json')
+        return open(pathlib.Path().cwd() / 'drinks.json', encoding="utf-8")
 
     def getAll(self):
         return self.collection.get("drinks", [])
