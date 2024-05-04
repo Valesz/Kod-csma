@@ -11,8 +11,8 @@ def loadShop():
 @shop.post('/api/add')
 def addProduct():
     if (request.method == "POST"):
-        print(request.form.get('id'))
-        print(shopController().getRow(request.form.get('id')))
-
-        shopController().addProduct(shopController().getRow(request.form.get('id')))
+        try:
+            shopController().addProduct(shopController().getRow(request.form.get('id')))
+        except ValueError:
+            return redirect(url_for('error.loadError', msg="Given id not found!"))
     return redirect(url_for('shop.loadShop'))

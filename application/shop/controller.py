@@ -18,10 +18,11 @@ class shopController():
         for product in products:
             if int(product.get('id')) == int(id):
                 return product
-        return {}
+        raise ValueError
 
     def addProduct(self, _product: dict):
         tmpProduct = product(_product.get('id'), _product.get('name'), _product.get('image'), _product.get('cost'))
+
         if session.get('cart') is None:
             session["cart"] = list()
         currentCart: list = session["cart"]
