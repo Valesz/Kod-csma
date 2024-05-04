@@ -8,7 +8,7 @@ class shopController(baseController):
     def getAll(self):
         return self.collection.get("drinks", [])
 
-    def getRow(self, id):
+    def getRow(self, id) -> product:
         products = self.collection.get("drinks")
         for product in products:
             if int(product.get('id')) == int(id):
@@ -16,7 +16,7 @@ class shopController(baseController):
         raise ValueError
 
     @staticmethod
-    def addProduct(_product: dict):
+    def addProduct(_product: dict) -> product:
         tmpProduct = product(_product.get('id'), _product.get('name'), _product.get('image'), _product.get('cost'))
 
         if session.get('cart') is None:

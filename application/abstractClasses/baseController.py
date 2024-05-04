@@ -12,8 +12,8 @@ class baseController(ABC):
 
     @abstractmethod
     def getAll(self):
-        pass
+        raise NotImplementedError
 
     @abstractmethod
     def getRow(self, id):
-        pass
+        raise NotImplementedError

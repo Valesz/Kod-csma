@@ -9,7 +9,7 @@
     <div class="cart">
         <h1>Jelenlegi stack-ed</h1>
 
-        {% if items|length > 0  %}
+        {% if items and items|length > 0  %}
 
             <div class="cartBody">
                 <div class="itemContainer">
@@ -24,7 +24,8 @@
                                 <img src="{{ url_for('shop.static', filename='images/shop_init.jpg') }}">
                                 <h3>count:<br>1</h3>
                                 <div class="itemButtons">
-                                    <form>
+                                    <form action="{{ url_for('cart.incrementItem') }}" method="post">
+                                        <input type="hidden" name="id" value="{{ item.id }}">
                                         <input type="submit" value="+">
                                     </form>
 
