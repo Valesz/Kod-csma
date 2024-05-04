@@ -1,3 +1,5 @@
+import json
+
 from flask import Flask
 from flask import redirect, url_for
 from application.main.route import main
@@ -5,6 +7,7 @@ from application.shop.route import shop
 from application.error.route import error
 from application.cart.route import cart
 from flask_session import Session
+from werkzeug.exceptions import HTTPException
 
 app = Flask(__name__)
 
@@ -21,6 +24,14 @@ Session(app)
 def hello_world():  # put application's code here
     return redirect(url_for('main.loadMain'))
 
+@app.errorhandler(HTTPException)
+def errorHTTP(e):
+    _error = json.dumps({
+        "code": e.code,
+        "name": e.name,
+        "description": e.description
+    })
+    return redirect(url_for('error.loadError', msg=_error))
 
 if __name__ == '__main__':
     app.run(debug=True)

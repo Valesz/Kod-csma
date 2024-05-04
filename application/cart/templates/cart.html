@@ -1,10 +1,77 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'index.html' %}
+
+{% block css %}
+    <link rel="stylesheet" href="{{ url_for('cart.static', filename='style.css') }}">
+{% endblock %}
+
+{% block content %}
+
+    <div class="cart">
+        <h1>Jelenlegi stack-ed</h1>
+
+        {% if items|length > 0  %}
+
+            <div class="cartBody">
+                <div class="itemContainer">
+
+                        {% for item in items %}
+
+                        <div class="item">
+                            <div class="itemHeader">
+                                <h2>{{ item.name }}</h2>
+                            </div>
+                            <div class="itemBody">
+                                <img src="{{ url_for('shop.static', filename='images/shop_init.jpg') }}">
+                                <h3>count:<br>1</h3>
+                                <div class="itemButtons">
+                                    <form>
+                                        <input type="submit" value="+">
+                                    </form>
+
+                                    {% if loop.last %}
+
+                                    <form action="{{ url_for('cart.removeItem') }}" method="post">
+                                        <input type="hidden" name="id" value="{{ item.id }}">
+                                        <input type="submit" value="-">
+                                    </form>
+
+                                    {% endif %}
+
+                                </div>
+                            </div>
+                        </div>
+
+                        {% endfor %}
+
+                </div>
+                <div class="buy">
+                    <div class="buyHeader">
+                        Stack teljes értéke:
+                    </div>
+                    <div class="buyBody">
+
+                        {% for product in costs %}
+
+                            <div>
+                                <span class="buyName">{{ product.name }}</span>
+                                <span class="buyValue">{{ product.cost }}</span>
+                            </div>
+
+                        {% endfor %}
+
+                    </div>
+                    <div class="buyButtons">
+                        <form action="{{ url_for('cart.removeItemAll') }}" method="post">
+                            <input type="submit" value="stack.clear()">
+                        </form>
+                        <form action="{{ url_for('cart.buyItems') }}" method="post" target="_blank">
+                            <input type="submit" value="Megvesz">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+
+    </div>
+
+{% endblock %}

@@ -1,14 +1,9 @@
-import json
-import pathlib
 from flask import session
 from .model import product
+from ..abstractClasses.baseController import baseController
 
-class shopController():
-    def __init__(self):
-        self.collection = json.load(self.openDB())
 
-    def openDB(self):
-        return open(pathlib.Path().cwd() / 'drinks.json', encoding="utf-8")
+class shopController(baseController):
 
     def getAll(self):
         return self.collection.get("drinks", [])
@@ -20,7 +15,8 @@ class shopController():
                 return product
         raise ValueError
 
-    def addProduct(self, _product: dict):
+    @staticmethod
+    def addProduct(_product: dict):
         tmpProduct = product(_product.get('id'), _product.get('name'), _product.get('image'), _product.get('cost'))
 
         if session.get('cart') is None:
