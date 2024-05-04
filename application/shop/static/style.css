@@ -10,38 +10,54 @@
 }
 
 .card {
-    height: 200px;
-    width: 200px;
+    height: fit-content;
+    min-height: fit-content;
+    width: 300px;
     border: 2px solid #FF9800;
     border-radius: 10px;
-    background-image: url("./images/shop_init.jpg");
-    background-size: cover;
+    margin: 20px;
 }
 
 .card .cardHeader {
     padding: 5px 5px 5px 10px;
-    background-color: rgba(255, 152, 0, 0.8);
-    border-radius: 10px;
+    background-color: rgba(255, 152, 0, 1);
+    border-radius: 10px 10px 0 0;
     color: white;
-    filter: opacity(0%);
-    transition: 0.3s all;
-}
-
-.card:hover .cardHeader {
     filter: opacity(100%);
+    z-index: 10;
+    transition: 0.3s all;
 }
 
 .card .cardBody {
     padding: 5px 5px 5px 10px;
-    background-color: rgba(255, 152, 0, 0.8);
-    border-radius: 10px;
+    background-color: rgba(255, 152, 0, 1);
+    border-radius: 0 0 10px 10px;
     color: white;
     font-size: 1.3rem;
-    margin-top: 125px;
-    filter: opacity(0%);
+    z-index: 10;
     transition: 0.3s all;
 }
 
-.card:hover .cardBody {
-    filter: opacity(100%);
+.card .cardImage {
+    position: relative;
+
+    background-size: cover;
+}
+
+.cardButton {
+    display: flex;
+    float: right;
+    font-size: 1rem;
+    padding: 8px;
+    background-color: #D06609;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+.productContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }

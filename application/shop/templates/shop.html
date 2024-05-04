@@ -8,15 +8,24 @@
 
     <div class="shop">
         <h1>Packageink csak neked!</h1>
-        <div class="card">
-            <div class="cardHeader">
-                <h2>Init (bejövős)</h2>
-            </div>
-            <div class="cardBody">
-                <span>400 Ft/shot</span>
-            </div>
-        </div>
-    </div>
+        <div class="productContainer">
+        {% for product in products %}
 
+            <form action="{{ url_for('shop.addProduct') }}" method="post" class="card">
+                <div class="cardHeader">
+                    <h2>{{ product.get("name") }}</h2>
+                </div>
+                <img class="cardImage" src="{{ url_for('shop.static', filename='/images/' + product.get('image')) }}"></img>
+                <div class="cardBody">
+                    <span>{{ product.get('cost') }} Ft/shot</span>
+                    <input type="hidden" name="id" value="{{ product.get('id') }}">
+                    <input type="submit" class="cardButton" value="Kosárba">
+                </div>
+            </form>
+
+        {% endfor %}
+        </div>
+
+    </div>
 
 {% endblock %}
