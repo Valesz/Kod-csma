@@ -5,4 +5,4 @@ main = Blueprint('main', __name__, static_folder='static', template_folder='temp
 
 @main.get('/')
 def loadMain():
-    return render_template('main.html', main=main)
+    return render_template('main.html')

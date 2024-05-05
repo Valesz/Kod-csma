@@ -2,6 +2,7 @@ from abc import ABC, abstractmethod
 import json
 import pathlib
 
+
 class baseController(ABC):
     """
     A basic class for controllers
@@ -14,6 +15,7 @@ class baseController(ABC):
         getAll (abstract): returns all the rows in the desired collection
         getRow (abstract): returns a single row from the desired collection
     """
+
     def __init__(self):
         """ Loads the database into the collection attribute
         """
