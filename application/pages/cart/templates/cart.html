@@ -21,7 +21,7 @@
                                 <h2>{{ item.name }}</h2>
                             </div>
                             <div class="itemBody">
-                                <img src="{{ url_for('shop.static', filename='images/shop_init.jpg') }}">
+                                <img src="{{ url_for('shop.static', filename='/images/' + item.imgUrl) }}" alt="Image for {{ item.name }}">
                                 <h3>count:<br>1</h3>
                                 <div class="itemButtons">
                                     <form action="{{ url_for('cart.incrementItem') }}" method="post">
