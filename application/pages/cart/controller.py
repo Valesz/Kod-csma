@@ -1,7 +1,7 @@
 from functools import reduce
 from flask import session
-from ..shop.model import product
-from ..abstractClasses.baseController import baseController
+from application.classes.productModel import product
+from application.classes.abstractClasses.baseController import baseController
 
 
 class cartController(baseController):

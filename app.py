@@ -2,10 +2,10 @@ import json
 
 from flask import Flask
 from flask import redirect, url_for
-from application.main.route import main
-from application.shop.route import shop
-from application.error.route import error
-from application.cart.route import cart
+from application.pages.main.route import main
+from application.pages.shop.route import shop
+from application.pages.error.route import error
+from application.pages.cart.route import cart
 from flask_session import Session
 from werkzeug.exceptions import HTTPException
 
