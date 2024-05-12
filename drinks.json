@@ -4,127 +4,127 @@
 			"id": 0,
 			"name": "Init (bejovos)",
 			"image": "shop_init.jpg",
-			"cost": 400
+			"cost": 200
 		},
 		{
 			"id": 1,
 			"name": "Bash Brew",
-			"image": "shop_init.jpg",
-			"cost": 400
+			"image": "bash_brew.jpg",
+			"cost": 550
 		},
 		{
 			"id": 2,
 			"name": "C Sharp Cider",
-			"image": "shop_init.jpg",
-			"cost": 400
+			"image": "c_sharp_cider.jpg",
+			"cost": 600
 		},
 		{
 			"id": 3,
 			"name": "Go Grog",
-			"image": "shop_init.jpg",
-			"cost": 400
+			"image": "go_grog.jpg",
+			"cost": 500
 		},
 		{
 			"id": 4,
 			"name": "Haskell Highball",
-			"image": "shop_init.jpg",
-			"cost": 400
+			"image": "haskell_highball.jpg",
+			"cost": 450
 		},
 		{
 			"id": 5,
 			"name": "Java Julep",
-			"image": "shop_init.jpg",
-			"cost": 400
+			"image": "java_julep.jpg",
+			"cost": 650
 		},
 		{
 			"id": 6,
 			"name": "Kotlin Kolsch",
-			"image": "shop_init.jpg",
-			"cost": 400
+			"image": "kotlin_kolsch.jpg",
+			"cost": 550
 		},
 		{
 			"id": 7,
 			"name": "Matlab Mojito",
-			"image": "shop_init.jpg",
-			"cost": 400
+			"image": "matlab_mojito.jpg",
+			"cost": 500
 		},
 		{
 			"id": 8,
 			"name": "Python Pilsner",
-			"image": "shop_init.jpg",
-			"cost": 400
+			"image": "python_pilsner.jpg",
+			"cost": 700
 		},
 		{
 			"id": 9,
 			"name": "Ruby Rosé",
-			"image": "shop_init.jpg",
-			"cost": 400
+			"image": "ruby_rosee.jpg",
+			"cost": 700
 		},
 		{
 			"id": 10,
 			"name": "Swift Sangria",
-			"image": "shop_init.jpg",
-			"cost": 400
+			"image": "swift_sangria.jpg",
+			"cost": 550
 		},
 		{
 			"id": 11,
 			"name": "TypeScript Tequila",
-			"image": "shop_init.jpg",
-			"cost": 400
+			"image": "typescript_tequila.jpg",
+			"cost": 550
 		},
 		{
 			"id": 12,
 			"name": "Vim Vodka",
-			"image": "shop_init.jpg",
-			"cost": 400
+			"image": "vim_vodka.jpg",
+			"cost": 600
 		},
 		{
 			"id": 13,
 			"name": "Wolfram Whiskey",
-			"image": "shop_init.jpg",
-			"cost": 400
+			"image": "wolfram_whiskey.jpg",
+			"cost": 650
 		},
 		{
 			"id": 14,
 			"name": "YAML Yager",
-			"image": "shop_init.jpg",
+			"image": "yaml_yager.jpg",
 			"cost": 400
 		},
 		{
 			"id": 15,
 			"name": "Code Cooler",
-			"image": "shop_init.jpg",
-			"cost": 400
+			"image": "code_cooler.jpg",
+			"cost": 500
 		},
 		{
 			"id": 16,
 			"name": "Giga Gin",
-			"image": "shop_init.jpg",
-			"cost": 400
+			"image": "giga_gin.jpg",
+			"cost": 600
 		},
 		{
 			"id": 17,
 			"name": "Bug Bitter",
-			"image": "shop_init.jpg",
-			"cost": 400
+			"image": "bug_bitter.jpg",
+			"cost": 500
 		},
 		{
 			"id": 18,
 			"name": "Variable Vesper",
-			"image": "shop_init.jpg",
-			"cost": 400
+			"image": "variable_vesper.jpg",
+			"cost": 660
 		},
 		{
 			"id": 19,
 			"name": "Query Quaff",
-			"image": "shop_init.jpg",
-			"cost": 400
+			"image": "query_quaff.jpg",
+			"cost": 550
 		},
 		{
 			"id": 20,
 			"name": "Method Martini",
-			"image": "shop_init.jpg",
-			"cost": 400
+			"image": "method_martini.jpg",
+			"cost": 600
 		}
 	]
 }

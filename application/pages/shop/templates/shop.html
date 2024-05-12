@@ -17,7 +17,7 @@
                 </div>
                 <img class="cardImage" src="{{ url_for('shop.static', filename='/images/' + product.get('image')) }}"></img>
                 <div class="cardBody">
-                    <span>{{ product.get('cost') }} Ft/shot</span>
+                    <span>{{ product.get('cost') }} Ft/db</span>
                     <input type="hidden" name="id" value="{{ product.get('id') }}">
                     <input type="submit" class="cardButton" value="Kosárba">
                 </div>

@@ -82,5 +82,4 @@ def buyItems():
     :return: Redirects to the best place to donate 1% of your tax to ;)
     """
     cartController().removeAll()
-    return redirect(
-        'http://www.eotvos.u-szeged.hu/sites/default/files/muhelyek/adrienne182/EKA_k%C3%B6sz%C3%B6nj%C3%BCk_2021.jpg')
+    return redirect(url_for('cart.loadCart'))
